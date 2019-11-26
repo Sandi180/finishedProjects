@@ -1,0 +1,30 @@
+<% include partials/header.ejs %>
+<div id="container"></div>
+<form class="bit" action='/getPrice' method="GET">
+    <h1> BitCoin Price App</h1>
+    <div class="dots">
+        <input  type="radio" name="code" value="USD" >
+        <label>USD</label>
+        <input type="radio" name="code" value="GBP">
+        <label>GBP</label>
+        <input type="radio" name="code" value="EUR"> 
+        <label>EUR</label>
+    </div>
+<br>    
+<input id="btn" type="submit" value="Get Price">
+</form>
+
+<div>
+<h2>This is the current Price:
+<br><br>
+
+ 
+<p> <%- symb %> <%= price %> </p>
+
+</h2>
+</div>
+
+</div>
+
+
+<% include partials/footer.ejs %>

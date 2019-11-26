@@ -1,0 +1,32 @@
+#container{
+    background-color: aquamarine;
+
+}
+
+body{
+    background-color: aquamarine;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+input[type='submit']{
+    background-color: orange;
+    font-size: 2em;
+    padding: 25px 20px;
+    border-radius: 25px;
+    border: 2px white solid;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p{
+    font-size: 50px;
+}

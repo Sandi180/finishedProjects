@@ -1,0 +1,36 @@
+<% include partials/header.ejs %>
+
+<h1>Here are some great places near by!</h1>
+
+<table class="table">
+    <div class="container">
+    <thead>
+      <tr>
+        <th scope="col-4, col-md-4">Restaurant</th>
+        <th scope="col-4, col-md-4">Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <% stuff.forEach(function(stuff){ %>
+         <% if ((stuff.rating % 1) === 0 ){ %>
+           <%   stars = '/yelp_stars/web_and_ios/large/large_' + stuff.rating + '.png'  %>
+        <% } else { %>
+          <%  stars ='/yelp_stars/web_and_ios/large/large_' + Math.floor(stuff.rating) + '_half.png' %>
+        <% } %>
+         <tr>
+            <td scope="row"><a href="<%=stuff.url%>" target="blank"><%= stuff.name %></td>
+            <td ><img src="<%= stars%>" alt="stars"></td>
+              
+        </tr>
+            
+        <% }) %>
+    </tbody>
+  </div>
+  </table>
+
+
+
+
+
+<% include partials/footer.ejs %>

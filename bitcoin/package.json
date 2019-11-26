@@ -1,0 +1,17 @@
+{
+  "name": "bitcoin",
+  "version": "1.0.0",
+  "description": "Bitcoin App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valentina",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "numeral": "^2.0.6",
+    "request": "^2.88.0"
+  }
+}

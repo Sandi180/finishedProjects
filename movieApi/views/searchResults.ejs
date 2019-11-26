@@ -1,0 +1,16 @@
+<% include partials/header.ejs %>
+
+<div class="container-fluid bg-3 text-center">  
+  <h1>Now Playing at a Theater Near You:</h1>
+  <% movie.map(movie =>{ %>
+    <h3 id="title"><%= movie.title %></h3><br>
+    <span class="posters"><img src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" /></span>
+    <div class="row">
+      <div class="col-md-4 listings">
+          <p id="rate">Rating <%=movie.vote_average%> out of 10 stars</p>
+          <p id="sum"><%=movie.overview%></p><br>
+      </div>
+    </div>
+  </div>
+  <%})%>
+      

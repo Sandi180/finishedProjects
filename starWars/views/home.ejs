@@ -1,0 +1,9 @@
+<% include partials/header.ejs %>
+<div class="starWarsSubmit">
+    <h1>Star Wars Characters! Pick a number from 0 to 9:</h1>
+        <form class="form-inline my-2 my-lg-0" action="/searchResults" method="GET">
+            <input class="form-control mr-sm-2" type="search" name="personNum" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit" id="peopleResults">Submit</button>
+        </form>
+
+<% include partials/footer.ejs %>

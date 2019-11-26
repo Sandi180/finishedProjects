@@ -1,0 +1,13 @@
+<% include partials/header.ejs %>
+
+<form action="/searchResults" method="get">
+    <h1>Find a food place near you.</h1>
+   <div class="form-group">
+     <label for="location">Enter Your Location</label>
+     <input type="search" class="form-control" name="foodPlace" placeholder="Enter your City">
+   </div>
+   
+   <button type="submit" class="btn btn-warning">Submit</button>
+ </form>
+
+<% include partials/footer.ejs %>

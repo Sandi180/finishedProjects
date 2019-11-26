@@ -1,0 +1,17 @@
+{
+  "name": "starwars",
+  "version": "1.0.0",
+  "description": "Information of Star Wars characters",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VALENTINA",
+  "license": "ISC",
+  "dependencies": {
+    "curl-request": "^1.1.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}

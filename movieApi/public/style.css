@@ -1,0 +1,61 @@
+body{
+    background-color: darkred;
+    
+    /* position: relative; */
+}
+
+#image {
+    background-image: url("img/theater.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.listings,
+h3 {
+    margin: 0 auto;
+    text-align: center;
+    color:whitesmoke;
+}
+
+span img {
+    display: block;
+    margin: 0 auto;
+}
+
+div{
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+h1 {
+    /* display: flex;    */
+  /* flex-wrap: wrap; */
+  font-size: 75px;
+
+}
+
+.mainContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    padding:20px; 
+    font-size: 20px;
+}
+
+
+.row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+#title {
+    color: rgb(246, 175, 43);
+}
